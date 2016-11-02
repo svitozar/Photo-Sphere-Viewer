@@ -4,6 +4,8 @@ window.onload = function() {
 	document.getElementById('pano').addEventListener('change', upload, false);
 };
 
+
+
 // Load the predefined panorama
 function loadPredefinedPanorama(evt) {
 	evt.preventDefault();
@@ -12,14 +14,15 @@ function loadPredefinedPanorama(evt) {
 	var loader = document.createElement('div');
 	loader.className = 'loader';
 
+
 	// Panorama display
 	var div = document.getElementById('container');
 	div.style.height = '30px';
 
 	PSV = new PhotoSphereViewer({
 		// Path to the panorama
-		panorama: 'examples/sun.jpg',
-
+		panorama:'/examples/sun.jpg',
+		 
 		// Container
 		container: div,
 
